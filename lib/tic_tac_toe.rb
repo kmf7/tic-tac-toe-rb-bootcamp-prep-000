@@ -87,7 +87,11 @@ end
 
 def play(board)
   turn = 0 
-  while turn < 9 && !won?(bpard)
+  if won?(board)
+    puts "Congratulations #{winner(board)}"
+  elsif draw?(board)
+    puts " Game is a draw"
+  else
     turn(board)
     turn += 1 
   end
