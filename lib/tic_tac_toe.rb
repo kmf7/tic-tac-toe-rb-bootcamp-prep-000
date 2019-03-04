@@ -87,7 +87,7 @@ end
 
 def play(board)
   turn = 0 
-  while turn < 9 
+  while turn < 9 && !won?(bpard)
     turn(board)
     turn += 1 
   end
