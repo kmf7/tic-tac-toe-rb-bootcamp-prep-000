@@ -86,6 +86,8 @@ def winner(board)
 end
 
 def play(board)
-  while over? == 
+  while over? == false
+     turn 
   end
+  
 end
